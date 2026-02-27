@@ -1,8 +1,8 @@
 class Diffyml < Formula
   desc "Structural diff tool for YAML files"
   homepage "https://github.com/szhekpisov/diffyml"
-  url "https://github.com/szhekpisov/diffyml/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "808e6fa2ecb714bf187f2bf71d9c14ee27582ac1c4cd8232a1b2b89ac10ab1f1"
+  url "https://github.com/szhekpisov/diffyml/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "f208572fc0cc2d7d7aad9259b7eac44021b40e88ce18a1a734b39fecac2a0f97"
   license "MIT"
 
   depends_on "go" => :build
