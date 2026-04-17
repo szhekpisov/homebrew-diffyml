@@ -5,21 +5,21 @@
 class Diffyml < Formula
   desc "Structural diff tool for YAML files"
   homepage "https://github.com/szhekpisov/diffyml"
-  version "1.5.21"
+  version "1.5.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.21/diffyml_1.5.21_darwin_amd64.tar.gz"
-      sha256 "8c0193c80a455511f1e530d84e0ab60380e42c5175704f4aa8153d3330d446e2"
+      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.22/diffyml_1.5.22_darwin_amd64.tar.gz"
+      sha256 "7bede7e5d20d35bed3c673a71a4ca61ef69dadba18c37021084bceb96aa01467"
 
       define_method(:install) do
         bin.install "diffyml"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.21/diffyml_1.5.21_darwin_arm64.tar.gz"
-      sha256 "86af8d7c361aa8ee0a4d6d7d444ebc95c7abdcc411e0c12f3c81e57aaec2d990"
+      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.22/diffyml_1.5.22_darwin_arm64.tar.gz"
+      sha256 "b36f1999274249e049bfa811a6dc34e802fdd0a1f56056a3afc68cfc87a14193"
 
       define_method(:install) do
         bin.install "diffyml"
@@ -29,15 +29,15 @@ class Diffyml < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.21/diffyml_1.5.21_linux_amd64.tar.gz"
-      sha256 "334c56cc4dc6bf7c580a9cc37cf7a17af2a3b3ca6fbe35ac4d6e811ef7b7f409"
+      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.22/diffyml_1.5.22_linux_amd64.tar.gz"
+      sha256 "d80c48f755f15cff59fb0cb6a7297bcfd62ae7ce76b1fea7bd59ca4984be93ab"
       define_method(:install) do
         bin.install "diffyml"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.21/diffyml_1.5.21_linux_arm64.tar.gz"
-      sha256 "12654f17d02107eda9a1f350d936bad9ec67f9f087dabb7a0cb697ee165fe889"
+      url "https://github.com/szhekpisov/diffyml/releases/download/v1.5.22/diffyml_1.5.22_linux_arm64.tar.gz"
+      sha256 "efed372f73ebe5fd078253537e5f5bf7594bcf16659cf8558291936852ae05f4"
       define_method(:install) do
         bin.install "diffyml"
       end
