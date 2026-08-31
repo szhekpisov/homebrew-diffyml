@@ -11,7 +11,7 @@ class Diffyml < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/szhekpisov/diffyml/releases/download/v1.8.1/diffyml_1.8.1_darwin_amd64.tar.gz"
-      sha256 "41d0f6cd02e5e3ea02a9f2b3aa8881218a0814df8eeb0a5d471c14047b5ce547"
+      sha256 "0f861c6edb2d929f9f0714307c6b23f797bbecd1db48199f393800d78ca50749"
 
       define_method(:install) do
         bin.install "diffyml"
@@ -19,7 +19,7 @@ class Diffyml < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/szhekpisov/diffyml/releases/download/v1.8.1/diffyml_1.8.1_darwin_arm64.tar.gz"
-      sha256 "da7a18cf1533ab638830abd181d975fc75b80b199be4511e503d1fa7f65667e8"
+      sha256 "be15801d4ccda0afa1b1dfe91ec0a05df7138bbec3bec1b43105289f72e9d25d"
 
       define_method(:install) do
         bin.install "diffyml"
@@ -30,14 +30,14 @@ class Diffyml < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/szhekpisov/diffyml/releases/download/v1.8.1/diffyml_1.8.1_linux_amd64.tar.gz"
-      sha256 "9605b94598d0031674541f9fdc62e79e6cdfe2d3241095ef7deaf47b23ec708f"
+      sha256 "c03731a3b112b09b2a04ab08e9dd8502844c8da78758b724a9a3c855523adfec"
       define_method(:install) do
         bin.install "diffyml"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/szhekpisov/diffyml/releases/download/v1.8.1/diffyml_1.8.1_linux_arm64.tar.gz"
-      sha256 "ecef540093836eab088752b94cea5cb15ff77e23a3656976ced5e34a56971f97"
+      sha256 "a2ae83d281c1ee34eaaf074e0519445a2a6897575733fee8f65d4a5be19a9785"
       define_method(:install) do
         bin.install "diffyml"
       end
